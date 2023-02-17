@@ -40,7 +40,7 @@ func TestNode(t *testing.T) {
 	}
 	if nil != nodes {
 		for i := 0; i < len(nodes.Items); i++ {
-			t.Logf("node[%d]: %s", i, nodes.Items[i].Name)
+			t.Logf("node[%d]: %s %s", i, nodes.Items[i].Name, nodes.Items[i].Status.Addresses[0].Address)
 		}
 	}
 }
